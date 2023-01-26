@@ -1,7 +1,12 @@
 # Line Follower-Robotics
 
 ### Description
-The final project for the Introduction to Robotics course. The task was to build a robot using the received kit, that can follow a curved black line and finish a course in a relatively short time. This was a team project and I teamed up with my colleague, Andrei Dina, to form Team Andre. His repo: https://github.com/AndreiConstantinDina/LineFollower
+The final project for the Introduction to Robotics course. The task was to build a robot using the provided kit, that can follow a curved black line and finish a course in a relatively short time. This was a team project and I teamed up with my colleague, Andrei Dina, to form Team Andre. His repo: https://github.com/AndreiConstantinDina/LineFollower
+
+### Line Follower Kit
+<p float = "left">
+    <img src = "https://user-images.githubusercontent.com/34553466/214818827-6cda0941-bfe4-4585-bdf0-28c2366e1fd2.png" height = "600" width = 90%>
+</p>
 
 ### How it works
 The first stage is the auto-calibration stage. The robot moves from left to right repeatedely so that the sensor can calibrate to follow the line. Then, the robot is centered on the line and starts to move along it. The error from the sensors is mapped to the [-75, 75] interval and the PID values are: kp = 20, ki = 0, kd = 5. The robot finished the course from the video in 28,253 seconds.
